@@ -8,14 +8,20 @@
 
 /* Begin PBXBuildFile section */
 		5C980C5A2131BBC400B94A1A /* LiteratureClockView.h in Headers */ = {isa = PBXBuildFile; fileRef = 5C980C592131BBC400B94A1A /* LiteratureClockView.h */; };
-		5C980C5C2131BBC400B94A1A /* LiteratureClockView.m in Sources */ = {isa = PBXBuildFile; fileRef = 5C980C5B2131BBC400B94A1A /* LiteratureClockView.m */; };
+		5C980C5C2131BBC400B94A1A /* LiteratureClockView.mm in Sources */ = {isa = PBXBuildFile; fileRef = 5C980C5B2131BBC400B94A1A /* LiteratureClockView.mm */; };
+		5C980C652131BD1100B94A1A /* AppKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5C980C642131BD1100B94A1A /* AppKit.framework */; };
+		5C980C672131BD1D00B94A1A /* ScreenSaver.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5C980C662131BD1D00B94A1A /* ScreenSaver.framework */; };
+		5C980C692131BE4D00B94A1A /* data.csv in Resources */ = {isa = PBXBuildFile; fileRef = 5C980C682131BE4D00B94A1A /* data.csv */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		5C980C562131BBC400B94A1A /* LiteratureClock.saver */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LiteratureClock.saver; sourceTree = BUILT_PRODUCTS_DIR; };
 		5C980C592131BBC400B94A1A /* LiteratureClockView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LiteratureClockView.h; sourceTree = "<group>"; };
-		5C980C5B2131BBC400B94A1A /* LiteratureClockView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LiteratureClockView.m; sourceTree = "<group>"; };
+		5C980C5B2131BBC400B94A1A /* LiteratureClockView.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = LiteratureClockView.mm; sourceTree = "<group>"; };
 		5C980C5D2131BBC400B94A1A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5C980C642131BD1100B94A1A /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
+		5C980C662131BD1D00B94A1A /* ScreenSaver.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ScreenSaver.framework; path = System/Library/Frameworks/ScreenSaver.framework; sourceTree = SDKROOT; };
+		5C980C682131BE4D00B94A1A /* data.csv */ = {isa = PBXFileReference; lastKnownFileType = text; path = data.csv; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -23,6 +29,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5C980C672131BD1D00B94A1A /* ScreenSaver.framework in Frameworks */,
+				5C980C652131BD1100B94A1A /* AppKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -34,6 +42,7 @@
 			children = (
 				5C980C582131BBC400B94A1A /* LiteratureClock */,
 				5C980C572131BBC400B94A1A /* Products */,
+				5C980C632131BD1100B94A1A /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -49,10 +58,20 @@
 			isa = PBXGroup;
 			children = (
 				5C980C592131BBC400B94A1A /* LiteratureClockView.h */,
-				5C980C5B2131BBC400B94A1A /* LiteratureClockView.m */,
+				5C980C682131BE4D00B94A1A /* data.csv */,
+				5C980C5B2131BBC400B94A1A /* LiteratureClockView.mm */,
 				5C980C5D2131BBC400B94A1A /* Info.plist */,
 			);
 			path = LiteratureClock;
+			sourceTree = "<group>";
+		};
+		5C980C632131BD1100B94A1A /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				5C980C662131BD1D00B94A1A /* ScreenSaver.framework */,
+				5C980C642131BD1100B94A1A /* AppKit.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -123,6 +142,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5C980C692131BE4D00B94A1A /* data.csv in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -133,7 +153,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				5C980C5C2131BBC400B94A1A /* LiteratureClockView.m in Sources */,
+				5C980C5C2131BBC400B94A1A /* LiteratureClockView.mm in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
